@@ -1,4 +1,3 @@
-console.log('Here is : ', 'array')
 
 
 
@@ -12,14 +11,19 @@ Correct the syntax error
  'the','fox' 'over' lazy, 'dog',  ]
 
 */
-
+// [1,7,9,45]
+// ["str","alex","moh"]
+// ["the","fox","over lazy","dog"]
 
 /*
 2
 What the index of "Banana","Tomato"
 var fruits=["Tomato","Banana","Watermelon"]
 
-*/
+// */
+// fruits[0]
+// fruits[1]
+
 
 
 /*
@@ -29,8 +33,10 @@ Create an array represents your:
 2- Favorite Sport (3)
 3- Favorite Movie (4)
 */
+var  FavoriteFood=["mansaf", "bryani","kabsah","adas", "mahshi"]
 
-
+var FavoriteSport=["football","basktball","tens"]
+ var FavoriteMovie =["the walk","plapla", "plal" ,"girl"]
 /*
 4
 Create a function called firstOfArray
@@ -40,7 +46,10 @@ and return the first element in an array
 Ex: firstOfArray([1,4,5]) => 1
 Ex: firstOfArray(["t","u","g","x"]) => "t"
 */
-
+  ar =[1,5,4]
+ function firstOfArray(ar){
+     return ar[0]
+ }
 
 /*
 5
@@ -51,7 +60,10 @@ and return the first element in an array
 Ex: lastOfArray([1,4,5]) => 5
 Ex: lastOfArray(["t","u","g","x"]) => "x"
 */
-
+arr=["ali","ahmad1","as"]
+function lastOfArray(){
+return arr [arr.length-1]
+}
 
 /*
 6
@@ -60,15 +72,24 @@ Using console make this array to be like this one (push, unshift, shift, pop)
 var array = [0,5,7,9]
 => [1,3,4,6,8,9,10]
 */
-
-
+var array = [0,5,7,9]
+ array.shift()
+array.shift()
+array.shift()
+array.unshift(1,3,4,6,8)
+array.push(10)
+ 
 /*
 7
 Using the console try to figure out what the thing thats (push, unshift, shift, pop) return to you
-
-var array2 = [5,9,-7,3.5]
 */
+var array = [5,9,-7,3.5]
 
+array.shift()
+array.unshift(1)
+array.push(10)
+array.pop()
+ 
 
 /*
 8
@@ -81,7 +102,21 @@ Ex: middleOfArray([1,4,5]) => 4
 Ex: middleOfArray(["t","u","g","x"]) =>"u and g"
 */
 
+var arr=["t","u","g","x"]
 
+function middleOfArray(arr){
+  if((arr.length-1)%2===0){
+      var x=(arr.length-1)/2
+    return arr[x]
+
+    
+  }
+  else 
+  x=(arr.length-2)/2
+   return arr[x]+arr[x+1]}
+
+
+middleOfArray(arr)
 /*
 9
 Using assignment operator (=)
@@ -95,6 +130,10 @@ var nums= [1,2,3,8,9]
 nums => [5,-22,3.5,44,98,44]
 */
 
+var animals =["cat","ele","bird"]
+animals=animals.slice(1,3)
+animals[0]="zebra"
+animals[1]="elephant"
 
 /*
 10
@@ -109,8 +148,12 @@ Ex: indexOfArray(nums,4) => 9
 
 **try more cases by your self
 */
-
-
+arr=[1,2,3,4]
+function indexOfArray(arr,ind)
+{
+return arr[ind]
+}
+indexOfArray(arr,3)
 /*
 11
 Create a function called arrayExceptLast
@@ -122,8 +165,10 @@ Ex: arrayExceptLast(nums) =>  [1,2,3,8]
 
 **try more cases by your self
 */
-
-
+arr=[1,2,3,4]
+function arrayExceptLast(arr){
+return (arr.slice(0,arr.length-1))
+}
 /*
 12
 Create a function called addToEnd
@@ -135,6 +180,16 @@ Ex: addToEnd(nums,55) =>  [1,2,3,8,55]
 
 **try more cases by your self
 */
+
+arr=[1,2,3,4]
+
+function addToEnd (arr,val){
+arr[arr.length]=val
+return (arr)
+
+}
+
+
 
 
 // all the exercises below should solved 2 times: 1- for loop 2- while lopp
@@ -150,6 +205,24 @@ Ex: sumArray(nums) => 23
 ** solve it one time using for loop and another using while loop
 **try more cases by your self
 */
+nums= [1,2,3,8,9]
+function  sumArray(nums){
+    result=0
+for (i=0;i<nums.length;i++)
+  {result =result+nums[i]}
+  return result
+
+}
+
+function  sumrray(nums){
+    result=0
+    i=0
+while (i<nums.length)
+  {result =result+nums[i]
+   i++
+  }
+  return result
+}
 
 
 /*
@@ -162,9 +235,22 @@ var nums= [1,2,3,8,9]
 Ex: minInArray(nums) => 1
 
 ** solve it one time using for loop and another using while loop
-**try more cases by your self
-*/
+**try more cases by your se*/
 
+var nums= [1,2,3,8,9]
+function  minInArray(nums)
+{
+ for (i=0;i<nums.length-1;i++)
+ {
+ {if(nums[0]<nums[i+1])
+    x=nums[0]
+    else 
+    x=nums[i+1]
+}
+ }
+return x
+
+}
 
 /*
 15
@@ -178,8 +264,18 @@ Ex: minInArray(nums,8) => [1,2,3,9]
 ** solve it one time using for loop and another using while loop
 **try more cases by your self
 */
+var nums= [1,2,3,8,9]
+function removeFromArray(nums,number)
+{
+    for(i=0;i<nums.length; i++){
+if(nums[i]===number)
+ nums[i].removeFromArray
+
+    }
 
 
+
+}
 /*
 16
 Create a function called oddArray
